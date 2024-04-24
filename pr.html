@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  background-color: aqua;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 550px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+p {color: #0e0707;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  text-align: center;}
+</style>
+</head>
+<body>
+
+<div class="mySlides fade" style="text-align: center;">
+  
+  <div class="text" style="background-color: red; height: 20px;"><b>BENGALURU NORTH UNIVERSITY (BCA)</b></div>
+</div>
+
+<!-- The four columns -->
+<table border="5" style="color: rgb(243, 11, 11); background-color: rgb(133, 160, 0); border-color: blue;">
+  <tr>
+    <th>SEM</th>
+    <th>Programming in C</th>
+    <th>Fundamentals of Computers</th>
+    <th>Mathematical Foundation</th>
+    <th>Entrepreneurship and Start-ups</th>
+    <th>Environmental Studies</th>
+    <th>HINDI</th>
+    <th>ENGLISH</th>
+  </tr>
+  <tr>
+    <th>
+      <a><h1>I</h1></a>
+    </th>
+    <th>
+      <a href="PY.pdf" download>
+        <img src="pr.jpeg" alt="W3Schools" width="104" height="142">
+      </a>
+    </th>
+    <th>
+      <a href="BEEDI NAMITA MONDAL.pdf" download>
+        <img src="pr.jpeg" alt="W3Schools" width="104" height="142">
+      </a>
+    </th>
+    <th>
+      <a href="BEEDI NAMITA MONDAL.pdf" download>
+        <img src="pr.jpeg" alt="W3Schools" width="104" height="142">
+      </a>
+    </th>
+    <th>
+      <a href="BEEDI NAMITA MONDAL.pdf" download>
+        <img src="pr.jpeg" alt="W3Schools" width="104" height="142">
+      </a>
+    </th>
+    <th>
+      <a href="BEEDI NAMITA MONDAL.pdf" download>
+        <img src="pr.jpeg" alt="W3Schools" width="104" height="142">
+      </a>
+    </th>
+    <th>
+      <a href="BEEDI NAMITA MONDAL.pdf" download>
+        <h1>NO BOOK</h1>
+      </a>
+    </th>
+    <th>
+      <a href="BEEDI NAMITA MONDAL.pdf" download>
+        <h1>NO BOOK</h1>
+      </a>
+    </th>
+  </tr>
+</table>
+<table border="5" style="background-color: rgb(255, 0, 238); color: red; border-color: rgb(231, 247, 13);">
+  <tr>
+    <th>SEM</th>
+    <th>Data Structures C</th>
+    <th>OOPS IN JAVA</th>
+    <th>Mathematical Structures</th>
+    <th>Event Management</th>
+    <th>Digital Fluency</th>
+    <th>HINDI</th>
+    <th>ENGLISH</th>
+  </tr>
+  <tr>
+    <th>
+        <h1>II</h1>
+      
+    </th>
+    <th>
+      <a href="BEEDI NAMITA MONDAL.pdf" download>
+        <img src="pr.jpeg" alt="W3Schools" width="104" height="142">
+      </a>
+    </th>
+    <th>
+      <a href="BEEDI NAMITA MONDAL.pdf" download>
+        <img src="pr.jpeg" alt="W3Schools" width="104" height="142">
+      </a>
+    </th>
+    <th>
+      <a href="BEEDI NAMITA MONDAL.pdf" download>
+        <img src="pr.jpeg" alt="W3Schools" width="104" height="142">
+      </a>
+    </th>
+    <th>
+      <a href="BEEDI NAMITA MONDAL.pdf" download>
+        <img src="pr.jpeg" alt="W3Schools" width="104" height="142">
+      </a>
+    </th>
+    <th>
+      <a href="BEEDI NAMITA MONDAL.pdf" download>
+        <img src="pr.jpeg" alt="W3Schools" width="104" height="142">
+      </a>
+    </th>
+    <th>
+      <a href="BEEDI NAMITA MONDAL.pdf" download>
+        <h1>NO BOOK</h1>
+      </a>
+    </th>
+    <th>
+      <a href="BEEDI NAMITA MONDAL.pdf" download>
+        <h1>NO BOOK</h1>
+      </a>
+    </th>
+  </tr>
+</table>
+<table border="5" style="background-color: blueviolet; color: red; border-color: black;">
+  <tr>
+    <th>SEM</th>
+    <th>C# and DOT NET Framework</th>
+    <th>Database Management Systems</th>
+    <th>Computer Communication and Networks</th>
+    <th>Social Media Marketing</th>
+    <th>India and Indian Constitution</th>
+    <th>HINDI</th>
+    <th>ENGLISH</th>
+  </tr>
+  <tr>
+    <th>
+      <a>
+        <h1>III</h1>
+      </a>
+    </th>
+    <th>
+      <a href="BEEDI NAMITA MONDAL.pdf" download>
+        <img src="pr.jpeg" alt="W3Schools" width="104" height="142">
+      </a>
+    </th>
+    <th>
+      <a href="BEEDI NAMITA MONDAL.pdf" download>
+        <img src="pr.jpeg" alt="W3Schools" width="104" height="142">
+      </a>
+    </th>
+    <th>
+      <a href="BEEDI NAMITA MONDAL.pdf" download>
+        <img src="pr.jpeg" alt="W3Schools" width="104" height="142">
+      </a>
+    </th>
+    <th>
+      <a href="BEEDI NAMITA MONDAL.pdf" download>
+        <img src="pr.jpeg" alt="W3Schools" width="104" height="142">
+      </a>
+    </th>
+    <th>
+      <a href="BEEDI NAMITA MONDAL.pdf" download>
+        <img src="pr.jpeg" alt="W3Schools" width="104" height="142">
+      </a>
+    </th>
+    <th>
+      <a href="BEEDI NAMITA MONDAL.pdf" download>
+        <h1>NO BOOK</h1>
+      </a>
+    </th>
+    <th>
+      <a href="BEEDI NAMITA MONDAL.pdf" download>
+        <h1>NO BOOK</h1>
+      </a>
+    </th>
+  </tr>
+</table>
+<table border="5" style="color: rgb(255, 68, 0); border-color: blue; background-color: blanchedalmond;">
+  <tr>
+    <th>SEM</th>
+    <th>PYTHON</th>
+    <th>OPEN SOURCE</th>
+    <th>MULTIMEDIA ANIMATION</th>
+    <th>OPERATING SYSTEM</th>
+    <th>SOCIAL MEDIA ADD</th>
+    <th>HINDI</th>
+    <th>ENGLISH</th>
+  </tr>
+  <tr>
+    <th>
+      <a>
+        <h1>IV</h1>
+      </a>
+    </th>
+    <th>
+      <a href="BEEDI NAMITA MONDAL.pdf" download>
+        <img src="pr.jpeg" alt="W3Schools" width="104" height="142">
+      </a>
+    </th>
+    <th>
+      <a href="BEEDI NAMITA MONDAL.pdf" download>
+        <img src="pr.jpeg" alt="W3Schools" width="104" height="142">
+      </a>
+    </th>
+    <th>
+      <a href="BEEDI NAMITA MONDAL.pdf" download>
+        <img src="pr.jpeg" alt="W3Schools" width="104" height="142">
+      </a>
+    </th>
+    <th>
+      <a href="BEEDI NAMITA MONDAL.pdf" download>
+        <img src="pr.jpeg" alt="W3Schools" width="104" height="142">
+      </a>
+    </th>
+    <th>
+      <a href="BEEDI NAMITA MONDAL.pdf" download>
+        <img src="pr.jpeg" alt="W3Schools" width="104" height="142">
+      </a>
+    </th>
+    <th>
+      <a href="BEEDI NAMITA MONDAL.pdf" download>
+        <h1>NO BOOK</h1>
+      </a>
+    </th>
+    <th>
+      <a href="BEEDI NAMITA MONDAL.pdf" download>
+        <h1>NO BOOK</h1>
+      </a>
+    </th>
+  </tr>
+</table>
+<table border="5" style="background-color: rgb(11, 231, 37); color: red;">
+  <tr>
+    <th>SEM</th>
+    <th>Internet Technologies</th>
+    <th>Statical Computer  R</th>
+    <th>Software Engineering</th>
+    <th>Not Public</th>
+    <th>PROJECT 1</th>
+    <th>HINDI</th>
+    <th>ENGLISH</th>
+  </tr>
+  <tr>
+    <th>
+      <a>
+        <h1>V</h1>
+      </a>
+    </th>
+    <th>
+      <a href="BEEDI NAMITA MONDAL.pdf" download>
+        <img src="pr.jpeg" alt="W3Schools" width="104" height="142">
+      </a>
+    </th>
+    <th>
+      <a href="BEEDI NAMITA MONDAL.pdf" download>
+        <img src="pr.jpeg" alt="W3Schools" width="104" height="142">
+      </a>
+    </th>
+    <th>
+      <a href="BEEDI NAMITA MONDAL.pdf" download>
+        <img src="pr.jpeg" alt="W3Schools" width="104" height="142">
+      </a>
+    </th>
+    <th>
+      <a href="BEEDI NAMITA MONDAL.pdf" download>
+        <img src="pr.jpeg" alt="W3Schools" width="104" height="142">
+      </a>
+    </th>
+    <th>
+      <a href="BEEDI NAMITA MONDAL.pdf" download>
+        <img src="pr.jpeg" alt="W3Schools" width="104" height="142">
+      </a>
+    </th>
+    <th>
+      <a>
+        <h1>NO SUBJECT</h1>
+      </a>
+    </th>
+    <th>
+      <a>
+        <h1>NO SUBJECT</h1>
+      </a>
+    </th>
+  </tr>
+</table>
+<table border="5" style="background-color: aquamarine; color: red; border-color: blueviolet;">
+  <tr>
+    <th>SEM</th>
+    <th>Artificial Intelligence & Application</th>
+    <th>PHP and MySQL</th>
+    <th>PROJECT 2</th>
+    <th>Not Public</th>
+    <th>Not Public</th>
+    <th>HINDI</th>
+    <th>ENGLISH</th>
+  </tr>
+  <tr>
+    <th>
+      <a>
+        <h1>VI</h1>
+      </a>
+    </th>
+    <th>
+      <a href="BEEDI NAMITA MONDAL.pdf" download>
+        <img src="pr.jpeg" alt="W3Schools" width="104" height="142">
+      </a>
+    </th>
+    <th>
+      <a href="BEEDI NAMITA MONDAL.pdf" download>
+        <img src="pr.jpeg" alt="W3Schools" width="104" height="142">
+      </a>
+    </th>
+    <th>
+      <a href="BEEDI NAMITA MONDAL.pdf" download>
+        <img src="pr.jpeg" alt="W3Schools" width="104" height="142">
+      </a>
+    </th>
+    <th>
+      <a href="BEEDI NAMITA MONDAL.pdf" download>
+        <img src="pr.jpeg" alt="W3Schools" width="104" height="142">
+      </a>
+    </th>
+    <th>
+      <a href="BEEDI NAMITA MONDAL.pdf" download>
+        <img src="pr.jpeg" alt="W3Schools" width="104" height="142">
+      </a>
+    </th>
+    <th>
+      <a>
+        <h1>NOT SUBJECT</h1>
+      </a>
+    </th>
+    <th>
+      <a>
+        <h1>NO SUBJECT</h1>
+      </a>
+    </th>
+  </tr>
+</table>
+<button style="width: 1055px; background-color: rgb(237, 27, 45); color: blue;">BACK</button>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
+</body>
+</html>
